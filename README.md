@@ -21,8 +21,8 @@ ACR_NAME="day11demoacr"
 SQLSERVER="day11-demo-sqlserver"
 DB="mhcdb"
 
- #Create Resource group
- az group create --name $RGP --location $REGION
+#Create Resource group
+az group create --name $RGP --location $REGION
 
 #Deploy AKS
 az aks create --resource-group $RGP --name $CLUSTER_NAME --enable-addons monitoring --generate-ssh-keys --location $REGION
